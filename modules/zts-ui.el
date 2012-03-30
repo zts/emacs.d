@@ -13,5 +13,8 @@
 ;; Movement
 (windmove-default-keybindings) ;; Shift+arrow window changes
 
+;; Behaviour
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; Global bindings
 (global-set-key (kbd "C-x g") 'magit-status)
