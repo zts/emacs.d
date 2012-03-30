@@ -13,7 +13,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme)
+(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme auto-complete)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
