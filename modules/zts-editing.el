@@ -13,8 +13,8 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; programming hooks
-(add-hook 'prog-mode-hook 'linum-mode)
-(setq linum-format "%d ")
+;; (add-hook 'prog-mode-hook 'linum-mode)
+;; (setq linum-format "%4d ")
 
 ;; uniq buffer names
 (require 'uniquify)

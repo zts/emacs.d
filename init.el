@@ -13,7 +13,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme auto-complete js-comint)
+(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme auto-complete js-comint flymake-cursor)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
