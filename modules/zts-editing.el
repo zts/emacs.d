@@ -29,7 +29,7 @@
 (global-set-key (kbd "C-.") 'repeat)
 
 ;; electric modes
-(electric-pair-mode t)
+;;(electric-pair-mode t)
 ;;(electric-indent-mode t)
 ;;(electric-layout-mode t)
 
