@@ -29,9 +29,9 @@
 (global-set-key (kbd "C-.") 'repeat)
 
 ;; electric modes
-;;(electric-pair-mode t)
-;;(electric-indent-mode t)
-;;(electric-layout-mode t)
+(electric-pair-mode -1)
+(electric-indent-mode -1)
+(electric-layout-mode -1)
 
 ;; Autocompletion/snippets
 (global-set-key (kbd "M-/") 'hippie-expand)
