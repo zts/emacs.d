@@ -3,6 +3,7 @@
 
 ;; Chrome
 (tool-bar-mode -1)
+(fringe-mode 0)
 (setq inhibit-startup-screen t)
 (unless (eq system-type 'darwin)
   (menu-bar-mode -1))

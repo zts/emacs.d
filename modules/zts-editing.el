@@ -14,6 +14,7 @@
 
 ;; programming hooks
 (add-hook 'prog-mode-hook 'linum-mode)
+(setq linum-format "%d ")
 
 ;; uniq buffer names
 (require 'uniquify)
