@@ -1,3 +1,5 @@
+;; Stuff for working with Javascript
+
 (defun pretty-functions ()
   (font-lock-add-keywords
    nil `(("\\(function *\\).*("
@@ -5,6 +7,11 @@
                                     (match-end 1) "ƒ")
                     nil))))))
 (add-hook 'js-mode-hook 'pretty-functions)
+
+;; jshint
+;; using https://github.com/koansys/jshint-v8
+(require 'flymake-jshint)
+(add-hook 'js-mode-hook (lambda () (flymake-mode 1)))
 
 (require 'js-comint)
 (setq inferior-js-program-command "node")
