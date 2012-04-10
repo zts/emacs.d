@@ -1,5 +1,12 @@
 ;; Stuff for working with Javascript
 
+;; Mode-specific key bindings
+(eval-after-load 'javascript-mode
+  '(progn
+     (define-key js-mode-map (kbd "RET") 'reindent-then-newline-and-indent)))
+;;(define-key 'js-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
+
+;; Display tweaks
 (defun pretty-functions ()
   (font-lock-add-keywords
    nil `(("\\(function *\\).*("
@@ -13,6 +20,7 @@
 (require 'flymake-jshint)
 (add-hook 'js-mode-hook (lambda () (flymake-mode 1)))
 
+;; inferior js
 (require 'js-comint)
 (setq inferior-js-program-command "node")
 (setq inferior-js-mode-hook

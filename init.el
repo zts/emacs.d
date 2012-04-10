@@ -7,13 +7,17 @@
 
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+	     '("tromey" . "http://tromey.com/elpa/") t)
 
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme auto-complete js-comint flymake-cursor)
+(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme
+                      auto-complete js-comint flymake-cursor
+                      yaml-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
