@@ -3,7 +3,6 @@
 (setq-default indent-tabs-mode nil)
 '(tab-width 4)
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 (delete-selection-mode t)
 (show-paren-mode t)
 
