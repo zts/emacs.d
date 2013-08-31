@@ -23,3 +23,4 @@
 
 ;; Global bindings
 (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "M-l") 'goto-line) ;; formerly ignore downcase-word
