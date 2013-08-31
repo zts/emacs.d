@@ -15,7 +15,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(ido-ubiquitous magit markdown-mode color-theme
+(defvar my-packages '(ido-ubiquitous magit gist markdown-mode color-theme
                       auto-complete js-comint flymake-cursor
                       yaml-mode php-mode)
   "A list of packages to ensure are installed at launch.")
