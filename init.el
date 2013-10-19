@@ -17,7 +17,7 @@
 
 (defvar my-packages '(ido-ubiquitous magit gist markdown-mode color-theme
                       auto-complete js-comint flymake-cursor
-                      yaml-mode php-mode)
+                      yaml-mode php-mode apache-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
