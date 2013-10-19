@@ -20,6 +20,7 @@
 ;; Behaviour
 (fset 'yes-or-no-p 'y-or-n-p)
 (require 'flymake-cursor)
+(desktop-save-mode 1)
 
 ;; Global bindings
 (global-set-key (kbd "C-x g") 'magit-status)
