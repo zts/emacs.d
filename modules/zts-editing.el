@@ -15,6 +15,7 @@
 ;; (add-hook 'prog-mode-hook 'linum-mode)
 ;; (setq linum-format "%4d ")
 (add-to-list 'auto-mode-alist '("\\.zsh$" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.thor$" . ruby-mode))
 
 ;; uniq buffer names
 (require 'uniquify)
