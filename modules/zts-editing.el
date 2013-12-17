@@ -47,3 +47,15 @@
 
 ;; create the autosave dir if necessary, since emacs won't.
 (make-directory "~/.emacs.d/autosaves/" t)
+
+
+;; Replace smart quotes in a region
+;; from http://superuser.com/questions/603421/how-to-remove-smart-quotes-in-copy-paste
+(defun replace-smart-quotes (beg end)
+  "Replace 'smart quotes' in buffer or region with ascii quotes."
+  (interactive "r")
+  (format-replace-strings '(("\x201C" . "\"")
+                            ("\x201D" . "\"")
+                            ("\x2018" . "'")
+                            ("\x2019" . "'"))
+                          nil beg end))
