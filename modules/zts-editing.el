@@ -59,3 +59,7 @@
                             ("\x2018" . "'")
                             ("\x2019" . "'"))
                           nil beg end))
+
+;; Enable dired-extras
+(add-hook 'dired-load-hook
+          (function (lambda () (load "dired-x"))))
