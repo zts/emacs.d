@@ -16,6 +16,11 @@
 
 ;; Movement
 (windmove-default-keybindings) ;; Shift+arrow window changes
+;; move line/region up/down with M-n/M-p
+(require 'move-text)
+(global-set-key (kbd "M-p") 'move-text-up)
+(global-set-key (kbd "M-n") 'move-text-down)
+
 
 ;; Behaviour
 (fset 'yes-or-no-p 'y-or-n-p)
