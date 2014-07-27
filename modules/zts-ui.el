@@ -27,6 +27,12 @@
 (require 'flymake-cursor)
 (desktop-save-mode 1)
 
+;; save desktop state periodically
+;; http://stackoverflow.com/questions/3841459/how-to-periodically-run-a-task-within-emacs
+;; TODO FIX behaves poorly when recovering from a crash
+(run-with-timer 0 (* 30 60) 'desktop-save-in-desktop-dir)
+(run-with-timer 0 (* 30 60) 'recentf-save-list)
+
 ;; Global bindings
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "M-l") 'goto-line) ;; formerly ignore downcase-word
