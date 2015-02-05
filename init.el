@@ -19,6 +19,7 @@
 
 (defvar my-packages '(ido-ubiquitous magit gist markdown-mode color-theme
                       auto-complete js-comint flymake-cursor feature-mode
+                      terraform-mode lua-mode
                       groovy-mode yaml-mode php-mode apache-mode move-text)
   "A list of packages to ensure are installed at launch.")
 
