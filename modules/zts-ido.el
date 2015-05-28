@@ -8,6 +8,7 @@
 ;;      ido-auto-merge-work-directories-length nil
       ido-create-new-buffer 'always
       ido-use-filename-at-point 'guess
+      ffap-machine-p-known 'reject
 ;;      ido-use-virtual-buffers t
 ;;      ido-handle-duplicate-virtual-buffers 2
       ido-max-prospects 10)
