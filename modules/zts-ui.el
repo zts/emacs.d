@@ -30,9 +30,12 @@
 ;; save desktop state periodically
 ;; http://stackoverflow.com/questions/3841459/how-to-periodically-run-a-task-within-emacs
 ;; TODO FIX behaves poorly when recovering from a crash
-(run-with-timer 0 (* 60 60) 'desktop-save-in-desktop-dir)
-(run-with-timer 0 (* 60 60) 'recentf-save-list)
+(run-with-idle-timer (* 30 60) 1 'desktop-save-in-desktop-dir)
+(run-with-idle-timer (* 30 60) 1 'recentf-save-list)
 
 ;; Global bindings
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "M-l") 'goto-line) ;; formerly ignore downcase-word
+
+;; Prevent magit warning message on startup
+(setq magit-last-seen-setup-instructions "1.4.0")
