@@ -2,6 +2,7 @@
 
 (setq-default indent-tabs-mode nil)
 '(tab-width 4)
+(setq-default terraform-indent-level 4)
 
 (delete-selection-mode t)
 (show-paren-mode t)
