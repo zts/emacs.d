@@ -30,3 +30,6 @@
                      (lambda (output)
                        (replace-regexp-in-string ".*1G\.\.\..*5G" "..."
                                                  (replace-regexp-in-string ".*1G.*3G" ">" output))))))
+
+;; extra files/extensions that should be treated as js
+(add-to-list 'auto-mode-alist '("\\.packer$" . js-mode))
