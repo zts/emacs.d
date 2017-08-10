@@ -48,6 +48,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (move-text apache-mode php-mode yaml-mode groovy-mode lua-mode terraform-mode feature-mode flymake-cursor js-comint auto-complete color-theme markdown-mode gist magit ido-ubiquitous)))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
