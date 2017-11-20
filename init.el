@@ -19,7 +19,7 @@
 
 (defvar my-packages '(ido-ubiquitous magit gist markdown-mode color-theme
                       auto-complete js-comint flymake-cursor feature-mode
-                      terraform-mode lua-mode
+                      terraform-mode lua-mode vcl-mode
                       groovy-mode yaml-mode php-mode apache-mode move-text)
   "A list of packages to ensure are installed at launch.")
 
@@ -50,7 +50,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (move-text apache-mode php-mode yaml-mode groovy-mode lua-mode terraform-mode feature-mode flymake-cursor js-comint auto-complete color-theme markdown-mode gist magit ido-ubiquitous)))
+    (vcl-mode move-text apache-mode php-mode yaml-mode groovy-mode lua-mode terraform-mode feature-mode flymake-cursor js-comint auto-complete color-theme markdown-mode gist magit ido-ubiquitous)))
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
